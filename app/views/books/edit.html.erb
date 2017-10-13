@@ -1,0 +1,18 @@
+<div class="bg-warning text-black">
+
+<h1>Edit Books</h1>
+
+
+<%= simple_form_for @book, url: book_path, method: :put do |f| %>
+<%= f.input :name, label: 'Book name', error: 'Book name is mandatory, please specify one' %>
+<%= f.input :author, placeholder: 'Author name' %>
+<%= f.button :submit %>
+<% end %>
+
+<%= link_to 'Back', books_path %>
+
+<div class="text-center">
+  <img src="https://img.huffingtonpost.com/asset/58c0a5fe1d000027007cd5c0.jpg?ops=scalefit_720_noupscale" class="rounded" alt="...">
+</div>
+
+</div>

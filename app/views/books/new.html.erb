@@ -1,0 +1,25 @@
+<div class="bg-danger text-white">
+
+<br>
+
+<h1 class="display-4 text-center"> New Book :D</h1>
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Well done for reading a new book! I'm proud of you! :D </p>
+  <footer class="blockquote-footer"> Your future self </footer>
+</blockquote>
+
+
+
+  <%= simple_form_for @book, url: books_path do |f| %>
+  <%= f.input :name, label: 'Book name', error: 'Book name is mandatory, please specify one' %>
+  <%= f.input :author, placeholder: 'Author name' %>
+  <%= f.button :submit %>
+<% end %>
+
+<img src="" class="img-fluid" alt="Responsive image">
+<div class="text-center">
+  <img src="http://assets.nydailynews.com/polopoly_fs/1.1145388!/img/httpImage/image.jpg_gen/derivatives/article_970/bears28n-1-web.jpg" class="rounded" alt="...">
+</div>
+
+<br> <%= link_to 'Back', books_path %>
+</div>
