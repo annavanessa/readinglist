@@ -1,14 +1,10 @@
 <div class="bg-danger text-white">
-
 <br>
-
 <h1 class="display-4 text-center"> New Book :D</h1>
 <blockquote class="blockquote text-center">
   <p class="mb-0">Well done for reading a new book! I'm proud of you! :D </p>
   <footer class="blockquote-footer"> Your future self </footer>
 </blockquote>
-
-
 
   <%= simple_form_for @book, url: books_path do |f| %>
   <%= f.input :name, label: 'Book name', error: 'Book name is mandatory, please specify one' %>
